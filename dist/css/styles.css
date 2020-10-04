@@ -8,7 +8,7 @@ body {
   margin: 0; }
 
 main {
-  width: 940 px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px; }
   @media (max-width: 959px) {
@@ -199,6 +199,12 @@ nav {
       display: inline;
       font-size: 0.8em;
       margin-right: 10px; }
+      nav ul li a {
+        color: #E65C43;
+        text-decoration: none;
+        letter-spacing: -0.01em; }
+        nav ul li a:hover {
+          color: #FFF; }
       @media (max-width: 959px) {
         nav ul li {
           font-size: 1em;
@@ -207,12 +213,6 @@ nav {
         nav ul li {
           font-size: 0.8em;
           margin: 0 5px; } }
-      nav ul li a {
-        color: #E65C43;
-        text-decoration: none;
-        letter-spacing: -0.01em; }
-        nav ul li a:hover {
-          color: #FFF; }
 
 /* FOOTER */
 .greybar {

@@ -39,12 +39,6 @@ nav{
             display:inline;
             font-size:0.8em;
             margin-right:10px;
-            @include break(959px){
-                font-size:1em;margin:0 10px;
-            }
-            @include break(767px){
-                font-size:0.8em;margin:0 5px;
-            }
             a{
                 color:$red;
                 text-decoration:none;
@@ -52,6 +46,12 @@ nav{
                 &:hover{
                     color:$white;
                 }
+            }
+            @include break(959px){
+                font-size:1em;margin:0 10px;
+            }
+            @include break(767px){
+                font-size:0.8em;margin:0 5px;
             }
         }
     }

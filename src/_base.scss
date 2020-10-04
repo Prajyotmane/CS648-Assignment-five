@@ -7,7 +7,7 @@ body{
     margin:0;
 }
 main{
-    width:(1000 - 60)px;     //Mathematical operation
+    width:1000px-60px;   //Mathematical Operator
     margin:0 auto;
     padding:0 10px;
     @include break(959px){
