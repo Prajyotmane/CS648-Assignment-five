@@ -27,7 +27,7 @@ nav{
         width:inherit;height:50px;float:none;text-align:center;
     }
     @include break(459px){
-        
+        margin-bottom:40px !important;
     }
     ul{
         list-style-type:none;

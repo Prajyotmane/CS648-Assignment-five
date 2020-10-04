@@ -27,50 +27,51 @@ header{
     clear:both;
     text-align:center;
     padding-top:40px;
+    img{
+        max-width:100%;
+        height:auto;
+        @include break(767px){
+            margin-bottom:100px;
+        }
+        @include break(459px){
+            margin-bottom:80px;
+        }
+    }
+    h1{
+        @include setHeader($red, 100, 4em, 0);
+        @include break(959px){
+            font-size:3em;
+        }
+        @include break(767px){
+            font-size:2em;
+        }
+    
+    }
+    h2{
+        @include setHeader($white, 900, 2.5em, 0);
+        margin-bottom:70px;
+        @include break(959px){
+            font-size:1.5em;
+        }
+        @include break(767px){
+            font-size:1em;
+        }
+        @include break(459px){
+            font-size:1.4em;
+        }
+    }
+    h3{
+        @include setHeader($grey, 400, 2em, 0);
+        margin-bottom:50px;
+        @include break(767px){
+            font-size:1.5em;
+        }
+        @include break(459px){
+            color:$white;font-size:1em;
+        }
+    }
 }
-header img{
-    max-width:100%;
-    height:auto;
-    @include break(767px){
-        margin-bottom:100px;
-    }
-    @include break(459px){
-        margin-bottom:80px;
-    }
-}
-header h1{
-    @include setHeader($red, 100, 4em, 0);
-    @include break(959px){
-        font-size:3em;
-    }
-    @include break(767px){
-        font-size:2em;
-    }
-   
-}
-header h2{
-    @include setHeader($white, 900, 2.5em, 0);
-    margin-bottom:70px;
-    @include break(959px){
-        font-size:1.5em;
-    }
-    @include break(767px){
-        font-size:1em;
-    }
-    @include break(459px){
-        font-size:1.4em;
-    }
-}
-header h3{
-    @include setHeader($grey, 400, 2em, 0);
-    margin-bottom:50px;
-    @include break(767px){
-        font-size:1.5em;
-    }
-    @include break(459px){
-        color:$white;font-size:1em;
-    }
-}
+
 /* CONTENT */
 #headline{
     width:100%;
@@ -134,9 +135,21 @@ header h3{
     }
 }
 @include break(459px) {
-    select              		{width:95%;}
-    header h1:first-child		{font-size:1.4em;margin-bottom:20px;}
-    #content h3					{font-size:1.6em;}
-    article img		{display:none;}
-    footer p, footer img 		{float:none;margin:0;}
+    select{
+        width:95%;
     }
+    header h1:first-child{
+        font-size:1.4em;
+        margin-bottom:20px;
+    }
+    #content h3{
+        font-size:1.6em;
+    }
+    article img{
+        display:none;
+    }
+    footer p, footer img{
+        float:none;
+        margin:0;
+    }
+}
